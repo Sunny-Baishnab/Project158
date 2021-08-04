@@ -3,7 +3,7 @@ AFRAME.registerComponent('cursor-listener',{
         selectedItemsId:{type:'string',default:''}
     },
     init:function(){
-        this.handleMouseEnterEvent()
+        this.handleMouseEnterEvents()
         this.handleMouseLeaveEvents()
     },
     handlePlacesListState:function(){
