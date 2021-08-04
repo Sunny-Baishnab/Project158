@@ -56,7 +56,7 @@ AFRAME.registerComponent('comic-posters',{
             color:'white',
             opacity:1
         })
-        entityEl.setAttribute('poster-container',{})
+        entityEl.setAttribute('cursor-listener',{})
         return entityEl 
     },
 
@@ -66,12 +66,12 @@ AFRAME.registerComponent('comic-posters',{
         entityEl.setAttribute('geometry',{
             primitive:'plane',
             width:20,
-            height:28
+            height:33
         })
         entityEl.setAttribute('material',{
             src:item.url
         })
-        entityEl.setAttribute('position',{y:3,z:0.6})
+        entityEl.setAttribute('position',{y:0,z:0.6})
         return entityEl
     },
 })
